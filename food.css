@@ -1,0 +1,259 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigatin Bar */
+
+#navbar{
+    align-items: center;
+    display: flex;
+}
+/* Navizgation  bar ka andar logo ka srf */
+
+#logo{
+    margin: 36px -5px;
+}
+
+
+/* Navigation Bar ka andar image  */
+
+#logo img{
+    height: 110px;
+    width: 119px;
+    margin: 1px 12px;
+    border-radius: 49px;
+    
+}
+
+#navbar{
+    font-family: 'Roboto Mono', monospace;
+    
+    position: sticky;
+    top: 0px;
+    height: 118px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+/* Naviagtion box me list item  */
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(232, 249, 191);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(43, 8, 8);
+    /* opacity: -1; */
+    background-color: rgb(242, 237, 243);
+}
+
+
+/* Home SEction */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 1px 153px;
+    margin: -17px;
+    height: 587px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#home::before{
+    content: "";
+    background:url('C:/Users/RACHNA GUPTA/Desktop/WEB DEVELOPER/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 560px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;   
+}
+
+/* services section  */
+#services{
+    margin: 10px;
+    display: flex;
+}
+#services .box{
+    font-size: 1.1rem;
+    padding: 12px ;
+    margin: 20px;
+    border-radius: 57px;
+   background-color: rgb(223, 223, 207);
+    border: 3px solid rgb(240, 33, 33);
+
+}
+#services .box:hover{
+    background-color: cornflowerblue;
+    font-size: 1rem;
+}
+
+#services .box img{
+    height: 130px;
+    margin: auto;
+    display:flex
+
+}
+#services .box p{
+    font-family: 'Labrada', serif;
+}
+
+#client-section{
+    position: relative;
+    /* height: 300px; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    border: 5px solid grey;
+    background:url('../WEB/image.jpg');
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.client-item {
+    padding: 30px;
+
+}
+#client img{
+    height: 176px;
+    width: 150px;
+    padding: 30px;
+    margin: 10px;
+}
+
+#client{
+    margin: 8px;
+    padding: 7px;
+    height: 68%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* utilty class */
+/* utlity class are helpfull in reuseability */
+
+#home h1{
+    font-family: 'Labrada', serif;
+    /* font-family: 'Roboto Mono', monospace; */
+
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    /* font-family: 'Roboto Mono', monospace; */
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.3rem;
+
+    /* Contact Section  */
+}
+#contact{
+    position: relative;
+
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('C:/Users/RACHNA GUPTA/Desktop/WEB DEVELOPER/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+    opacity: 0.55;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,#contact-box textarea{
+    width: 89%;
+    padding: 1.3rem;
+    border-radius: 50px;
+    font-size: 1rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Labrada', serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+/* Utility Class */
+
+.h-primary{
+    font-family: 'Labrada', serif;
+    font-size: 2.8rem;
+    padding: 10px;
+    
+    align-items: center;
+}
+.h-second{
+    /* font-family: 'Labrada', serif; */
+    font-size: 2.1rem;
+    padding: 10px;
+
+}
+.btn{
+    font-style:bold;
+    cursor: pointer;
+    border-radius: 25px;
+    font: size 22px;
+    padding: 12px;
+    border: 2px solid wheat;
+    background-color: rgb(197, 210, 75);
+    color: rgb(43, 31, 31);
+    margin: 13px;
+}
+.center{
+    text-align: center;
+}
+
+
